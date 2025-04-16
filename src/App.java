@@ -9,7 +9,7 @@ public class App {
         
         Scanner entradaDados = new Scanner(System.in);
 
-        System.out.println("<===Jogo do Adivinha===> \nVocê pode precisa escolher um número de 0 á 50. Observação(Números com casas decimais também valem!).\n Se você acertar, será parabenizado. Caso erre mais de 5 vezes, você terá sua sessão encerrada. \nBoa Sorte! :)");
+        System.out.println("<===Jogo do Adivinha===> \nO Jogador precisa escolher um número de 0 10. Números quebrados não são excessão! \n ATENÇÃO PARA AS REGRAS DO JOGO! \n O Jogador terá 3 tentativas. Se acertar, sera Parabenizado. Se o jogador errar, você terá sua sessão encerrada. \nBoa Sorte! :)");
 
         double numeroDigitado = 0;
 
