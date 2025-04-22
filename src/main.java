@@ -66,9 +66,7 @@ class NumeroFantasma {
         Utils.slowPrint("  ║ Ela escolheu um número entre 1 e 10. Ela está... esperando você acertar.", 40);
         Utils.slowPrint("  ║ Lembre-se você tem 5 chances para acertar... ou para se arrepender de ter tentado.", 40);
         Utils.slowPrint("  ║ Cada palpite errado o aproxima da fúria silenciosa da Banana.", 40);
-        
-
-        
+    
         // Laço de tentativas
         while (tentativas > 0) {
             Utils.slowPrint("Escolha >: ", 30);
@@ -91,7 +89,6 @@ class NumeroFantasma {
         Utils.slowPrint(" Aahh você perdeu. Como se sente sabendo que não conseguiu nem da primeira rodada?" + "Essa não, a Banana está vindo ai..." + "Fui!...", 50);
     }
 }
-
 
 // Jogo 2: Esconde-esconde com uma criatura
 
@@ -149,21 +146,40 @@ class RoletaRussa {
         Scanner sc = new Scanner(System.in);
         Random rand = new Random();
 
-        // Bala está em uma das 6 posições
-        int bala = rand.nextInt(6) + 1;
+        int coisa = 2;
+        int Banana = 3;
+
 
         // Introdução dramática
-        Utils.slowPrint("\n🔫 Roleta Russa", 40);
-        Utils.slowPrint("Você segura o tambor... e gira.", 40);
-        Utils.slowPrint("Escolha um número de 1 a 6 para disparar contra sua cabeça: ", 30);
+
+        Utils.slowPrint("\n  ╔════════════════════════════════════════╗", 5);
+        Utils.slowPrint("  ║           ROLETA RUSSA: O FINAL         ║", 50);
+        Utils.slowPrint("  ╚════════════════════════════════════════╝", 5);
+        Utils.slowPrint("  ║ É aqui que muita gente econtra a Banana, mas pra nossa sorte que você não vai parar por aqui né? Pelo menos é o que esperamos.", 40);
+        Utils.slowPrint("  ║ Você esté em uma sala vazia, tudo na sua frente são 4 containers. Um deles, esta escondida a Banana, doida para te pegar." + "Já em outra, a coisa o espera para que você a liberte e vá com ela para a casa.", 60);
+        Utils.slowPrint("  ║ A sensação é estranha... o medo da delas escorre em sua pele.", 70);
+        Utils.slowPrint("  ║ Cada segundo parece mais longo que o anterior, como se o tempo estivesse se esticando.", 90);
+        Utils.slowPrint("  ║ Agora é com você.", 70);
+        Utils.slowPrint("  ║ Você tem 6 opções de containers: ", 70);
+        Utils.slowPrint("  ║ 1. O container de Metal... ele brilha, mas parece estar coberto de ferrugem.", 70);
+        Utils.slowPrint("  ║ 2. O container de Plástico... ele está trincado, como se algo estivesse tentando sair.", 70);
+        Utils.slowPrint("  ║ 3. O container de Madeira... ele está rangendo, como se estivesse vivo.", 70);
+        Utils.slowPrint("  ║ 4. O container de Vidro... ele reflete a luz, mas parece estar quebrado por dentro.", 70);
+        Utils.slowPrint("  ║ Escolha >: ", 30);
         
         int escolha = sc.nextInt();
 
         // Compara a posição escolhida com a da bala
-        if (escolha == bala) {
-            Utils.slowPrint("💥 *BANG*... Tudo escurece. Fim de jogo.", 50);
+        if (escolha == coisa) {
+            Utils.slowPrint("O som ecoa como um trovão no vazio. ", 70);
+            Utils.slowPrint("Seu corpo trava. A dor não vem... apenas o silêncio absoluto.", 90);
+            Utils.slowPrint("Você sente algo puxando você para um abismo sem fim... Era a coisa.", 110);
+        } if (escolha == Banana) {
+            Utils.slowPrint("...", 600);
+            Utils.slowPrint("Seu corpo não caiu. Ele apenas... desligou.", 90);
+            Utils.slowPrint("O tempo congelou. O ar sumiu. Seus pensamentos ecoam em um vácuo sombrio... A Banana está atras de você.", 100);
         } else {
-            Utils.slowPrint("... *click* ... Nada aconteceu. Você vive... por agora.", 30);
+            Utils.slowPrint("... Muito bem... Nada aconteceu. Você está pronto para a última etapa do jogo.", 30);   
         }
     }
 }
