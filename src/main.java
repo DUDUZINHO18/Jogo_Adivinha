@@ -20,7 +20,7 @@ class Utils {
         System.out.println();
     }
 }
-//TESTE
+//2TESTE
 // Jogo 1: Número Fantasma
 class NumeroFantasma {
 
