@@ -39,7 +39,7 @@ class NumeroFantasma {
         Utils.slowPrint("\n  ╔══════════════════════════════════════════════╗", 5);
         Utils.slowPrint("  ║         I N I C I A N D O  O   J O G O       ║", 50);
         Utils.slowPrint("  ╚══════════════════════════════════════════════╝", 5);
-        Utils.slowPrint("Seja Muito bem vindo(a) ao ║ J o g o - d a - Ú l t i m a - F a s e ║." + "\n Seu objetivo aqui é simples: Sobreviva até o fim do jogo sem escorregar na Banana." + "\n Você pode não ver mas, ela te observa... E não se engane, essa Banana muito má!!!", 40);
+        Utils.slowPrint("Seja Muito bem vindo(a) ao ║ JOGO - DA - ÚLTIMA - FASE ║." + "\n Seu objetivo aqui é simples: Sobreviva até o fim do jogo sem escorregar na Banana." + "\n Você pode não ver mas, ela te observa... E não se engane, essa Banana muito má!", 40);
         
         //--------------
         //regras do jogo
@@ -191,8 +191,8 @@ class Traidor {
     public void jogar() {
         Scanner sc = new Scanner(System.in);
 
-        Utils.slowPrint("\n  ╔═══════════════════════════════════════════════════════════════════════════════╗", 100);
-        Utils.slowPrint("\n    ║ A  -  V I T Ó R I A  -  E S T Á  -  E M  -  S U A S  -  M Ã O S  -  A G O R A ║", 200);
+        Utils.slowPrint("    ╔═══════════════════════════════════════════════════════════════════════════════╗", 100);
+        Utils.slowPrint("    ║ A  -  V I T Ó R I A  -  E S T Á  -  E M  -  S U A S  -  M Ã O S  -  A G O R A ║", 200);
         Utils.slowPrint("    ╚═══════════════════════════════════════════════════════════════════════════════╝", 100);
 
         Utils.slowPrint("\n  ╔════════════════════════════════════════════════╗", 5);
@@ -219,10 +219,10 @@ class Traidor {
         Utils.slowPrint("Escolha >: ", 90);
 
         int escolha = 6;
-        int traidor = new Random().nextInt(3) + 1;
+        int traidor = new Random().nextInt(6) + 1;
 
         // Verifica se o jogador eliminou o traidor certo
-        if (escolha == 6) {
+        if (escolha == traidor) {
             Utils.slowPrint("\n Parabéns, Jogador.", 60);
             Utils.slowPrint("Você expôs a mentira e executou a verdade com frieza cirúrgica.", 70);
             Utils.slowPrint("O sistema está... impressionado com a sua capacidade de jogabilidade.", 60);
@@ -287,7 +287,7 @@ public class main {
             System.out.println("     ║  2. Sair");
 
             // Escolha do jogo
-            Utils.slowPrint("Escolha: ", 30);
+            Utils.slowPrint("Escolha >: ", 30);
             int opcao = sc.nextInt();
 
             // Redireciona para o jogo selecionado
