@@ -45,7 +45,7 @@ class NumeroFantasma {
         //regras do jogo
         //--------------
         Utils.slowPrint("\n  <═══════════════════════════════════════════════════════════════════════════════>", 10);
-        Utils.slowPrint("\n  ╔══════════════════════════════════════════════╗", 5);
+        Utils.slowPrint("\n  ╔═══════════════════════════════════════════════╗", 5);
         Utils.slowPrint("  ║                A T E N Ç Ã O !                ║", 50);
         Utils.slowPrint("  ║     AGORA, EXPLICAREMOS AS REGRAS DO JOGO     ║", 50);
         Utils.slowPrint("  ╚═══════════════════════════════════════════════╝", 5);
@@ -132,7 +132,7 @@ class EscondeEsconde {
 
         // Compara esconderijo com o seguro
         if (escolha == lugarSeguranca) {
-            Utils.slowPrint(" Ela passou direto... você está salvo, por enquanto. Mas, não comemore. Ainda não acabamos os jogos.", 30);
+            Utils.slowPrint(" Ela passou direto... você está salvo, por enquanto. Mas, não comemore. Ainda não acabamos os jogos. :)", 30);
         } else {
             Utils.slowPrint(" Aahh não, você estava indo tão bem... Parece que agora a coisa vai ter que te dividir com a Banana.", 50);
         }
@@ -154,7 +154,7 @@ class RoletaRussa {
         // Introdução dramática
 
         Utils.slowPrint("\n  ╔════════════════════════════════════════╗", 5);
-        Utils.slowPrint("  ║           ROLETA RUSSA: O FINAL         ║", 50);
+        Utils.slowPrint("  ║           ROLETA RUSSA - O FINAL        ║", 50);
         Utils.slowPrint("  ╚════════════════════════════════════════╝", 5);
         Utils.slowPrint("  ║ É aqui que muita gente econtra a Banana, mas pra nossa sorte que você não vai parar por aqui né? Pelo menos é o que esperamos.", 40);
         Utils.slowPrint("  ║ Você esté em uma sala vazia, tudo na sua frente são 4 containers. Um deles, esta escondida a Banana, doida para te pegar." + "Já em outra, a coisa o espera para que você a liberte e vá com ela para a casa.", 60);
@@ -180,7 +180,7 @@ class RoletaRussa {
             Utils.slowPrint("Seu corpo não caiu. Ele apenas... desligou.", 90);
             Utils.slowPrint("O tempo congelou. O ar sumiu. Seus pensamentos ecoam em um vácuo sombrio... A Banana está atras de você.", 100);
         } else {
-            Utils.slowPrint("... Muito bem... Nada aconteceu. Você está pronto para a última etapa do jogo.", 30);   
+            Utils.slowPrint("... Muito bem... Nada aconteceu. Você está pronto para a última etapa do jogo.", 300);   
         }
     }
 }
@@ -191,11 +191,13 @@ class Traidor {
     public void jogar() {
         Scanner sc = new Scanner(System.in);
 
-        Utils.slowPrint("\n  ╔═══════════════════════════════════════════════════════════════════════════════╗", 5);
-        Utils.slowPrint("\n  ║ A  -  V I T Ó R I A  -  E S T Á  -  E M  -  S U A S  -  M Ã O S  -  A G O R A ║", 5);
-        Utils.slowPrint("    ╚═══════════════════════════════════════════════════════════════════════════════╝", 5);
-        Utils.slowPrint("\n  <═══════════════════════════════════════════════════════════════════════════════>", 10);
-        Utils.slowPrint("\n╔════════════════════════════════════════════════╗", 5);
+        Utils.slowPrint("\n  ╔═══════════════════════════════════════════════════════════════════════════════╗", 100);
+        Utils.slowPrint("\n  ║                                                                               ║", 100);
+        Utils.slowPrint("\n    ║ A  -  V I T Ó R I A  -  E S T Á  -  E M  -  S U A S  -  M Ã O S  -  A G O R A ║", 200);
+        Utils.slowPrint("\n  ║                                                                               ║", 100);
+        Utils.slowPrint("    ╚═══════════════════════════════════════════════════════════════════════════════╝", 100);
+
+        Utils.slowPrint("\n  ╔════════════════════════════════════════════════╗", 5);
         Utils.slowPrint("  ║                O TRAIDOR                       ║", 50);  
         Utils.slowPrint("  ╚════════════════════════════════════════════════╝", 5);
 
@@ -230,8 +232,8 @@ class Traidor {
             Utils.slowPrint("\n Mas lembre-se...", 100);
             Utils.slowPrint("...o próximo jogo será ainda mais desafiador.", 120);
             Utils.slowPrint("E talvez, na próxima, o traidor... seja realmente você.", 150);
+            Utils.slowPrint("Escolha >: ", 150);
             
-            System.exit(0);
 
         } else if (escolha == 1) {
             Utils.slowPrint("Kaoru. Ele apenas abaixa a cabeça... não resiste. Depois de ser eliminado do jogo, um bilhete cai do bolso dele:" + "\n'Desculpa. Eu só queria sobreviver junto com vocês.'", 50);
