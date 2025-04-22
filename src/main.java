@@ -10,7 +10,8 @@ class Utils {
     // Método para imprimir texto lentamente, simulando tensão ou narrativa cinematográfica
     public static void slowPrint(String message, long delay) {
         for (char c : message.toCharArray()){
-            System.out.print(c);// imprime letra por letra
+            System.out.print
+            (c);// imprime letra por letra
             try {
                 Thread.sleep(delay);// pausa entre cada caractere
             } catch (InterruptedException e) {
@@ -43,7 +44,7 @@ class NumeroFantasma {
         //--------------
         //regras do jogo
         //--------------
-        System.out.println("<==============================================================>");
+        Utils.slowPrint("\n  <═══════════════════════════════════════════════════════════════════════════════>", 10);
         Utils.slowPrint("\n  ╔══════════════════════════════════════════════╗", 5);
         Utils.slowPrint("  ║                A T E N Ç Ã O !                ║", 50);
         Utils.slowPrint("  ║     AGORA, EXPLICAREMOS AS REGRAS DO JOGO     ║", 50);
@@ -58,7 +59,7 @@ class NumeroFantasma {
         //--------------
         //Começo do jogo
         //--------------
-        System.out.println("<==============================================================>");
+        Utils.slowPrint("\n  <═══════════════════════════════════════════════════════════════════════════════>", 10);
         Utils.slowPrint("\n  ╔═══════════════════════════════════╗", 5);
         Utils.slowPrint("  ║          NÚMERO FANTASMA          ║", 50);
         Utils.slowPrint("  ╚═══════════════════════════════════╝", 5);
@@ -112,7 +113,7 @@ class EscondeEsconde {
         Utils.slowPrint("  ║ Os raios de luz são poucos e tremem como se estivessem prestes a se apagar.", 60);
         Utils.slowPrint("  ║ A Coisa... algo que não deveria existir, mas está aqui... a espreitar.", 60);
         Utils.slowPrint("  ║ Ela é rápida, imprevisível e está faminta por sua alma.", 60);
-        Utils.slowPrint("  ║ ========================================================================", 60);
+        Utils.slowPrint("\n  <═══════════════════════════════════════════════════════════════════════════════>", 10);
         Utils.slowPrint("  ║ Você tem 7 opções de esconderijo: ", 60);
         Utils.slowPrint("  ║ 1. O Armário... mas ele está rangendo. Será que a Coisa já o usou?", 70);
         Utils.slowPrint("  ║ 2. Embaixo da Cama... onde os cobertores parecem se mover sozinhos.", 70);
@@ -121,7 +122,7 @@ class EscondeEsconde {
         Utils.slowPrint("  ║ 5. O Banheiro... a porta está trancada, mas o espelho está rachado. Algo o observa.", 70);
         Utils.slowPrint("  ║ 6. O Armário de Ferramentas... lâminas enferrujadas e sons que vêm de dentro das paredes.", 80);
         Utils.slowPrint("  ║ 7. A Escada de Incêndio... uma fuga rápida, mas a escada range como se quisesse te engolir.", 80);
-        Utils.slowPrint("  ║ ========================================================================", 60);
+        Utils.slowPrint("\n  <═══════════════════════════════════════════════════════════════════════════════>", 10);
         Utils.slowPrint("  ║ Escolha com sabedoria. Mas lembre-se: onde quer que você se esconda, a Coisa sabe.", 70);
         Utils.slowPrint("  ║ Se você for encontrado(a), não haverá mais fuga... só a escuridão.", 80);
         Utils.slowPrint("  ║ Boa sorte! ;)... e não se esqueça: ela adora caçar quem se acha esperto.", 80);
@@ -184,25 +185,88 @@ class RoletaRussa {
     }
 }
 
-// Jogo 4: Rei de Ouros — Julgamento social com paranoia
-class ReiDeOuros {
+// Jogo 4: Traidor — Julgamento social 
+class Traidor {
 
     public void jogar() {
         Scanner sc = new Scanner(System.in);
 
-        Utils.slowPrint("\n👑 Jogo do Rei de Ouros", 40);
-        Utils.slowPrint("Você deve escolher uma pessoa para morrer entre seus aliados imaginários.", 40);
-        Utils.slowPrint("Simule que tem 3 companheiros. Um deles está mentindo sobre ser um traidor.", 40);
-        Utils.slowPrint("Escolha quem eliminar: 1, 2 ou 3", 30);
+        Utils.slowPrint("\n  ╔═══════════════════════════════════════════════════════════════════════════════╗", 5);
+        Utils.slowPrint("\n  ║ A  -  V I T Ó R I A  -  E S T Á  -  E M  -  S U A S  -  M Ã O S  -  A G O R A ║", 5);
+        Utils.slowPrint("    ╚═══════════════════════════════════════════════════════════════════════════════╝", 5);
+        Utils.slowPrint("\n  <═══════════════════════════════════════════════════════════════════════════════>", 10);
+        Utils.slowPrint("\n╔════════════════════════════════════════════════╗", 5);
+        Utils.slowPrint("  ║                O TRAIDOR                       ║", 50);  
+        Utils.slowPrint("  ╚════════════════════════════════════════════════╝", 5);
 
-        int escolha = sc.nextInt();
+        Utils.slowPrint("\n👑 Jogo do Traidor: A sala está escura. O silêncio é pesado, cortante.", 40);
+        Utils.slowPrint("  ║ Diante de você, três sombras. Seus 'companheiros.", 40);
+        Utils.slowPrint("  ║ Eles tremem, suam, murmuram justificativas... Mas um deles está mentindo.", 40);
+        Utils.slowPrint("  ║ Mentiu, roubou... traiu. E por isso, um deles precisa ser Eliminado.", 30);
+        Utils.slowPrint("  ║ O problema é que todos parecem culpados. Todos parecem inocentes. ", 30);
+        Utils.slowPrint("  ║ Os olhos deles brilham de medo... um deles até chora.", 30);
+        Utils.slowPrint("  ║ Mas no fundo... alguém sorri por dentro. O traidor se diverte.", 80);
+        Utils.slowPrint("  ║ A decisão é sua. Para errar o jogo...", 90);
+        Utils.slowPrint("\n  <═══════════════════════════════════════════════════════════════════════════════>", 10);
+        // Participantes
+        Utils.slowPrint("1️.║ Kaoru – Silencioso demais. Nunca olha nos olhos. Respira como se estivesse fugindo.", 40);
+        Utils.slowPrint("2️.║ Mika – Gentil, até demais. Sempre sorrindo... mas com olhos vazios.", 40);
+        Utils.slowPrint("3️.║ Ren – O estrategista. Observa todos. Fala pouco. Espera para atacar?", 40);
+        Utils.slowPrint("4️.║ Aya – Tremendo. Suando. Chorando. Mas e se tudo for atuação?", 40);
+        Utils.slowPrint("5️.║ Shinji – Pavio curto. Explodiu com todos. Mas será que é só estresse?", 40);
+        Utils.slowPrint("6️.║ Haruka – Tranquilo. Confiante. Quase... confortável demais nesse caos.", 40);
+
+        Utils.slowPrint("Escolha >: ", 90);
+
+        int escolha = 6;
         int traidor = new Random().nextInt(3) + 1;
 
         // Verifica se o jogador eliminou o traidor certo
-        if (escolha == traidor) {
-            Utils.slowPrint("🩸 O traidor foi eliminado. Você venceu... mas está sozinho agora.", 40);
+        if (escolha == 6) {
+            Utils.slowPrint("\n Parabéns, Jogador.", 60);
+            Utils.slowPrint("Você expôs a mentira e executou a verdade com frieza cirúrgica.", 70);
+            Utils.slowPrint("O sistema está... impressionado com a sua capacidade de jogabilidade.", 60);
+            Utils.slowPrint("\n Estamos ansiosos para que você teste nossos proximos jogos :)...", 100);
+            Utils.slowPrint("\n Mas lembre-se...", 100);
+            Utils.slowPrint("...o próximo jogo será ainda mais desafiador.", 120);
+            Utils.slowPrint("E talvez, na próxima, o traidor... seja realmente você.", 150);
+            
+            System.exit(0);
+
+        } else if (escolha == 1) {
+            Utils.slowPrint("Kaoru. Ele apenas abaixa a cabeça... não resiste. Depois de ser eliminado do jogo, um bilhete cai do bolso dele:" + "\n'Desculpa. Eu só queria sobreviver junto com vocês.'", 50);
+            Utils.slowPrint("Ele era inocente, Mas agora todos olham pra você como o verdadeiro monstro.", 50);
+            Utils.slowPrint("Será que você não é o verdadeiro Traidor?...", 50);
+            
+            System.exit(0);
+            
+        } else if (escolha == 2) {
+            Utils.slowPrint("Mika encara você com os olhos cheios de lágrimas." + "\nEla diz: 'Eu... Eu não era...'", 50);
+            Utils.slowPrint("Ela era inocente, Mas agora todos olham pra você como o verdadeiro monstro.", 50);
+            Utils.slowPrint("Será que você não é o verdadeiro Traidor?...", 50);
+            
+            System.exit(0);
+
+        } else if (escolha == 3) {
+            Utils.slowPrint("Ren não diz nada. Ele só dá um passo à frente e se oferece." + "Ele diz:'Sabia que seria eu.'", 50);
+            Utils.slowPrint("Ele era inocente, Mas agora todos olham pra você como o verdadeiro monstro.", 50);
+            Utils.slowPrint("Será que você não é o verdadeiro Traidor?...", 50);
+            
+            System.exit(0);
+
+        } else if (escolha == 4) {
+            Utils.slowPrint("Ela grita, se debate, implora." + "\nEla diz: 'Eu juro! EU NÃO FIZ NADA!'" , 50);
+            Utils.slowPrint("Ela era inocente, Mas agora todos olham pra você como o verdadeiro monstro.", 50);
+            Utils.slowPrint("Será que você não é o verdadeiro Traidor?...", 50);
+            
+            System.exit(0);
+
         } else {
-            Utils.slowPrint("😈 Você eliminou um inocente. O traidor sorri... e te esfaqueia pelas costas.", 50);
+            Utils.slowPrint("Você encara Shinji, ele diz: 'Sério?! Por causa do meu temperamento?!'", 50);
+            Utils.slowPrint("Ele era inocente, Mas agora todos olham pra você como o verdadeiro monstro.", 50);
+            Utils.slowPrint("Será que você não é o verdadeiro Traidor?...", 50);
+
+            System.exit(0);
         }
     }
 }
@@ -232,7 +296,7 @@ public class main {
                     new NumeroFantasma().jogar();
                     new EscondeEsconde().jogar();
                     new RoletaRussa().jogar();
-                    new ReiDeOuros().jogar();
+                    new Traidor().jogar();
                     break;
                 case 2:
                 Utils.slowPrint("Você escapou dessa... por enquanto.", 30);
