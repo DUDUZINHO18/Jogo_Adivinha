@@ -157,7 +157,7 @@ class RoletaRussa {
         Utils.slowPrint("  ║          ROLETA RUSSA - O FINAL        ║", 50);
         Utils.slowPrint("  ╚════════════════════════════════════════╝", 5);
         Utils.slowPrint("  ║ É aqui que muita gente econtra a Banana, mas pra nossa sorte que você não vai parar por aqui né? Pelo menos é o que esperamos.", 40);
-        Utils.slowPrint("  ║ Você esté em uma sala vazia, tudo na sua frente são 4 containers. Um deles, esta escondida a Banana, doida para te pegar." + "Já em outra, a coisa o espera para que você a liberte e vá com ela para a casa.", 60);
+        Utils.slowPrint("  ║ Você esté em uma sala vazia, tudo na sua frente são 4 containers. Um deles, esta escondida a Banana, doida para te pegar. \"Já em outra, a coisa o espera para que você a liberte e vá com ela para a casa.", 70);
         Utils.slowPrint("  ║ A sensação é estranha... o medo da delas escorre em sua pele.", 70);
         Utils.slowPrint("  ║ Cada segundo parece mais longo que o anterior, como se o tempo estivesse se esticando.", 90);
         Utils.slowPrint("  ║ Agora é com você.", 70);
@@ -218,8 +218,8 @@ class Traidor {
 
         Utils.slowPrint("Escolha >: ", 90);
 
-        int escolha = 6;
-        int traidor = new Random().nextInt(6) + 1;
+        int escolha = sc.nextInt();
+        int traidor = 6;
 
         // Verifica se o jogador eliminou o traidor certo
         if (escolha == traidor) {
@@ -230,36 +230,37 @@ class Traidor {
             Utils.slowPrint("\n Mas lembre-se...", 100);
             Utils.slowPrint("...o próximo jogo será ainda mais desafiador.", 120);
             Utils.slowPrint("E talvez, na próxima, o traidor... seja realmente você.", 150);
-            Utils.slowPrint("Escolha >: ", 150);
+            
+            System.exit(0); // Fecha o jogo
             
 
-        } else if (escolha == 1) {
+        } if (escolha == 1) {
             Utils.slowPrint("Kaoru. Ele apenas abaixa a cabeça... não resiste. Depois de ser eliminado do jogo, um bilhete cai do bolso dele:" + "\n'Desculpa. Eu só queria sobreviver junto com vocês.'", 50);
             Utils.slowPrint("Ele era inocente, Mas agora todos olham pra você como o verdadeiro monstro.", 50);
             Utils.slowPrint("Será que você não é o verdadeiro Traidor?...", 50);
             
-            
+            System.exit(0); // Fecha o jogo
             
         } else if (escolha == 2) {
             Utils.slowPrint("Mika encara você com os olhos cheios de lágrimas." + "\nEla diz: 'Eu... Eu não era...'", 50);
             Utils.slowPrint("Ela era inocente, Mas agora todos olham pra você como o verdadeiro monstro.", 50);
             Utils.slowPrint("Será que você não é o verdadeiro Traidor?...", 50);
             
-            
+            System.exit(0); // Fecha o jogo
 
         } else if (escolha == 3) {
             Utils.slowPrint("Ren não diz nada. Ele só dá um passo à frente e se oferece." + "Ele diz:'Sabia que seria eu.'", 50);
             Utils.slowPrint("Ele era inocente, Mas agora todos olham pra você como o verdadeiro monstro.", 50);
             Utils.slowPrint("Será que você não é o verdadeiro Traidor?...", 50);
             
-            
+            System.exit(0); // Fecha o jogo
 
         } else if (escolha == 4) {
             Utils.slowPrint("Ela grita, se debate, implora." + "\nEla diz: 'Eu juro! EU NÃO FIZ NADA!'" , 50);
             Utils.slowPrint("Ela era inocente, Mas agora todos olham pra você como o verdadeiro monstro.", 50);
             Utils.slowPrint("Será que você não é o verdadeiro Traidor?...", 50);
             
-            
+            System.exit(0); // Fecha o jogo
 
         } else {
             Utils.slowPrint("Você encara Shinji, ele diz: 'Sério?! Por causa do meu temperamento?!'", 50);
@@ -302,7 +303,7 @@ public class main {
                 Utils.slowPrint("Você escapou dessa... por enquanto.", 30);
                 System.exit(0); // Encerra o programa
                     default:
-                Utils.slowPrint("Opção inválida. Tente novamente.", 20);
+                Utils.slowPrint("Opção Inválida.", 20);
             }
         }
     }
